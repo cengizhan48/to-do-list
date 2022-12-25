@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.conteiner{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.todo_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top:32px;
+
+    background-color: rgb(243, 173, 9);
+}
+
+.todo_title{
+    font-size: 2.5rem;
+    
+}
+
+.todo_div{
+    display: flex;
+    margin-top: 16px;
+
+}
+
+.todo_input{
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+   
+
+}
+.todo_btn{
+
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.todo_btn:hover{
+    background-color: rgb(90, 145, 127);
+}
+
+.todo_conteiner{
+    display: flex;
+    flex-direction: column; 
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top:16px;
+    background-color: rgb(243, 173, 9);
+}
+
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(243, 173, 9);
+    background-color: rgb(243, 173, 9);
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.todo:last-child{
+    border: none;
+}
+
+.todo_left{
+    display: flex;
+    align-items: center;
+}
+
+.todo_text{
+    margin: 8px;
+}
+
+.todo_edit{
+    margin: 8px;
+}
+
+.todo_cb:checked ~ .todo_text{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.todo_delete{
+    background-color: tomato;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 4px 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.todo_delete:hover{
+    background-color:  rgb(250, 150, 132);
+}
+
+.todo_edit{
+    background-color: rgb(61, 224, 116);
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 4px 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3 ease all;
+}
+
+.todo_edit:hover{
+    background-color: rgb(53, 192, 99);
+}
